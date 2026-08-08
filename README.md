@@ -24,7 +24,7 @@ A basic Python project that analyzes student performance.
 
 ## How to Run
 
-Run the `test.py` file using Python.
+Run the `test2.py` file using Python.
 
 ## Example
 
