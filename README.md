@@ -24,7 +24,7 @@ A basic Python project that analyzes student performance.
 
 ## How to Run
 
-Run the `test.py` file using Python.
+Run the `Student-performance.py` file using Python.
 
 ## Example
 
@@ -36,3 +36,47 @@ The program takes student marks as input and generates:
 - Pass/Fail status
 - Topper
 - Class average
+
+
+
+
+# 🏦 ATM Simulation using Python
+
+## 📌 Project Description
+
+This is a beginner-friendly ATM Simulation project built using Python.
+
+The project simulates basic ATM operations such as PIN verification, checking account balance, depositing money, withdrawing money, and viewing transaction history.
+
+The main purpose of this project is to practice **Python programming, logical thinking, conditional statements, loops, and data structures**.
+
+---
+
+## 🚀 Features
+
+- 🔐 PIN verification
+- 💰 Check account balance
+- 💵 Deposit money
+- 🏧 Withdraw money
+- 📜 View transaction history
+- ⚠️ Insufficient balance validation
+- 🔢 Withdrawal limit validation
+- ❌ Invalid input handling
+- 🔒 Account lock after multiple incorrect PIN attempts
+
+---
+
+## 🛠️ Technologies Used
+
+- Python 3
+- Variables
+- `if / elif / else`
+- `while` loop
+- `for` loop
+- Lists
+- `append()`
+- `break`
+- User input
+
+---
+
