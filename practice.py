@@ -1,5 +1,5 @@
 #TODO: count digit:
-from math import sqrt
+# from math import sqrt
 
 # n = 5845
 # num = n
@@ -50,7 +50,7 @@ from math import sqrt
 # else:
 #     print(num,"number is not Armstrong")
 
-# TODO : Find factor or Diviser :
+# TODO : Find factor or Divider :
 
 # num = int(input("Enter a number: "))
 # result = []
@@ -99,3 +99,50 @@ from math import sqrt
 # for i in range (0,len(list1)):
 #     frequency[list1[i]] = frequency.get(list1[i],0) +1
 # print(frequency)
+
+# TODO : HASHING
+
+n = [5,3,2,2,1,5,5,7,5,10,1,10]
+m = [10,111,1,9,5,67,2]
+
+# Approach ->1
+
+# for i in m :
+#     count = 0
+#     for j in n:
+#         if j == i:
+#             count += 1
+#     print(i,"--",count)
+
+# Approach -> 2
+
+# hash_list = [0] * 11
+#
+# for i in n:
+#     hash_list[i] += 1
+#
+#
+# for j in m:
+#     if j < 1 or j>10:
+#         print(j,"-",0)
+#     else:
+#         print(j,"-",hash_list[j])
+
+# Approach -> 3
+
+hash_dict = dict()
+
+for i in n:
+    if i in hash_dict:
+        hash_dict[i] += 1
+    else:
+        hash_dict[i] = 1
+for j in m:
+    if j > 10 or j < 1:
+        print(j,"-",0)
+    elif j in hash_dict:
+        print(j,"-",hash_dict[j])
+    else:
+        print(j,"-",0)
+
+# for elif and else , place we also write -> print(j,"-",hash_dict.get(j,0))
