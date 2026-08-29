@@ -130,19 +130,147 @@ m = [10,111,1,9,5,67,2]
 
 # Approach -> 3
 
-hash_dict = dict()
-
-for i in n:
-    if i in hash_dict:
-        hash_dict[i] += 1
-    else:
-        hash_dict[i] = 1
-for j in m:
-    if j > 10 or j < 1:
-        print(j,"-",0)
-    elif j in hash_dict:
-        print(j,"-",hash_dict[j])
-    else:
-        print(j,"-",0)
+# hash_dict = dict()
+#
+# for i in n:
+#     if i in hash_dict:
+#         hash_dict[i] += 1
+#     else:
+#         hash_dict[i] = 1
+# for j in m:
+#     if j > 10 or j < 1:
+#         print(j,"-",0)
+#     elif j in hash_dict:
+#         print(j,"-",hash_dict[j])
+#     else:
+#         print(j,"-",0)
 
 # for elif and else , place we also write -> print(j,"-",hash_dict.get(j,0))
+
+# string hashing ->
+# Uppercase ASCII Values (A–Z)A: 65 B: 66 C: 67 D: 68 E: 69 F: 70  G: 71 H: 72 I: 73 J: 74 K: 75 L: 76 M: 77 N: 78 O: 79
+# P: 80 Q: 81 R: 82 S: 83 T: 84 U: 85 V: 86 W: 87 X: 88 Y: 89 Z: 90
+
+# Lowercase ASCII Values (a–z)a: 97 b: 98 c: 99 d: 100 e: 101 f: 102 g: 103 h: 104 i: 105 j: 106 k: 107 l: 108 m: 109
+# n: 110 o: 111 p: 112 q: 113 r: 114 s: 115 t: 116 u: 117 v: 118 w: 119 x: 120 y: 121 z: 122
+
+# s = "azyxyyzaaaanwdej"
+#
+# q = ["d","a","y","z","w","n"]
+#
+# hash_list = [0] * 26
+#
+# for i in s :
+#     ascii_value = ord(i)
+#     index = ascii_value - 97
+#     hash_list[index] += 1
+# for  j in q :
+#     ascii_value = ord(j)
+#     index = ascii_value - 97
+#     print(hash_list[index])
+
+
+# TODO : Recursion ->
+
+# count = 0
+# def printname(count):
+#     if count == 5:
+#         return
+#     print("hello world")
+#
+#     printname(count + 1)
+# printname(0)
+
+# Print 10 to 1 using recursion ->
+# It is called tail
+
+# def fun(i,n):
+#     if i>n :
+#         return
+#     fun(i+1,n)
+#     print(i)
+# fun(1,10)
+
+# print 1 to 10 using recursion ->
+# It is called head
+# def fun(i,n):
+#     if i==n:
+#         return
+#     print(i)
+#     fun(i+1,n)
+# fun(1,11)
+
+# print 1 to 10 using tail ->
+
+# def fun(i):
+#     if i == 0 :
+#         return
+#     fun(i-1)
+#     print(i)
+# fun(10)
+
+# Functional recursion ->
+
+# def fun(i):
+#     if i == 1:
+#         return 1
+#     return fun(i-1)+i
+# print(fun(5))
+
+# Find factorial of n using recursion ->
+
+# def factorial(n):
+#     if n ==1 :
+#         return 1
+#     return n * factorial(n-1)
+# print(factorial(5))
+
+# reverse an array ->
+
+# li = [5 , 7 , 3 , 2 , 6 , 1 ,5 , 9]
+#
+# def fun(li,l,r):
+#     if l >= r:
+#         return
+#     li[l], li[r] = li[r], li[l]
+#     fun(li,l+1,r-1)
+# fun(li,0,len(li)-1)
+# print(li)
+
+# check a no. is palindrome or not , using recursion ->
+
+# num = int(input("enter a number:"))
+#
+# def fun(num,rev=0):
+#
+#     if num <= 0:
+#         return rev
+#     r = num % 10
+#
+#     return fun(num//10,rev * 10 + r)
+# rev = fun(num)
+# if num == rev :
+#     print("true")
+# else:
+#     print("false")
+
+# find out string palindrome ->
+
+# name = input("Enter your name : ")
+# revName = name[:1:-1]
+# revName = "".join(reversed(name))
+
+# Using Recursion ->
+# def palindrome(name,l,r):
+#     if l >= r:
+#         return True
+#     if name[l] != name[r]:
+#         return False
+#
+#     return palindrome(name,l+1,r-1)
+# if palindrome(name,0,len(name)-1):
+#     print("True")
+# else:
+#     print("False")
+
+
