@@ -173,13 +173,13 @@ m = [10,111,1,9,5,67,2]
 # TODO : Recursion ->
 
 # count = 0
-# def printname(count):
+# def name(count):
 #     if count == 5:
 #         return
 #     print("hello world")
 #
-#     printname(count + 1)
-# printname(0)
+#     name(count + 1)
+# name(0)
 
 # Print 10 to 1 using recursion ->
 # It is called tail
@@ -273,4 +273,52 @@ m = [10,111,1,9,5,67,2]
 # else:
 #     print("False")
 
+# Reverse a string using while loop ->
 
+# string = input("Enter a string: ")
+# l = len(string)
+# i = l - 1
+# while i != -1:
+#     print(string[-l+i],end="")
+#     i = i - 1
+
+# Count how many word in this sentence ->
+
+# sen = "(What happens to a frog's car when it breaks down? It gets toad away"
+#
+# a = sen.split(" ")
+# l = len(a)
+# print(l)
+
+# Find Fibonacci using Loop ->
+
+# num = int(input("Enter a number you want to print to that : "))
+# a = 0
+# b = 1
+#
+#
+# for i in range(num + 1 ):
+#     c = a + b
+#     if i == num :
+#       print(a)
+#     a , b = b , c
+
+# Find fibonacci using recursion ->
+
+# num = int(input("Enter a number you want to print to that : "))
+#
+# def fun(num , a  , b ):
+#     if num == 0 :
+#         print(a)
+#         return
+#     c = a + b
+#     fun(num - 1 , a = b , b = c)
+# fun(num , 0 ,1)
+
+# Another Approach ->
+
+# def fun(num):
+#     if num == 0 or num == 1 :
+#         return num
+#     return fun(num-1) + fun(num-2)
+# print(fun(9))
